@@ -1,0 +1,59 @@
+/*- colors for the site
+head gradiente #217446 to #37C777 
+Tittles #8AAC99
+background #84E1AD
+-*/
+@font-face{
+    font-family: 'gustavoFonte';
+    src: url('fontes/idroid.otf') format('opentype')
+    , url('fontes/idroid.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'coolvetica';
+    src: url('fontes/coolvetica\ condensed\ rg.otf') format('opentype')
+    , url('fontes/coolvetica\ condensed\ rg.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #84E1AD;
+    font-family: 'coolvetica', Helvetica, sans-serif;
+    margin: 0%;
+
+}
+/* Setting header */
+header{
+    background-image: linear-gradient(to top, #124127, #3bd882 );
+    color: rgba(255, 255, 255, 0.788);
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.473);
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.521);
+}
+header>h1{
+    margin:  auto;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+    
+}
+header>p{
+    text-align: center;
+    font-size: 17px;
+}
+header>nav{
+    
+}
+nav>ul{
+    list-style: none;
+    padding: 10px 0px;
+}
+
+nav>ul li{
+    display: inline;
+    margin: 10px;   
+}
+
+li:hover{
+    color: #3bd882;
+}
