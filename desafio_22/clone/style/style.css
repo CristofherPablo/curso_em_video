@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --font1: Arial, Times, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    min-height: 150px;
+    color: white;
+}
+
+header > h1 {
+    font-family: var(--font2);
+    font-variant: small-caps;
+    font-size: 8vw;
+    padding-top: 50px;
+}
+
+header > p {
+    font-family: var(--font1);
+    padding-bottom: 25px;
+}
+
+header > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--font3);
+    font-size: 3vw;
+    line-height: 2;
+}
+
+section.normal {
+    margin: 40px 0px 20px 30px;
+}
+
+section.picture > p {
+    background-color: rgba(0, 0, 0, 0.445);
+    margin-right: 62%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    color: white;
+}
+
+section#pic1 {
+    background-image:url('../pictures/ladybug.jpg');
+    background-position: center right;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer {
+    min-height: 25px;
+    text-align: center;
+    font-family: var(--font1);
+    background-color: black;
+    color: white;
+}
+
+footer > p {
+    padding: 5px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
