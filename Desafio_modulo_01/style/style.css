@@ -3,6 +3,7 @@ body {
   background-color: rgb(223, 214, 203);
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1496px;
 }
 
 section {
@@ -14,7 +15,6 @@ section {
   border-color: #0f0101;
   border-radius: 10px;
   min-height: 440px;
-  margin-top: 22px;
 }
 
 h1 {
@@ -125,6 +125,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 22px;
 }
 
 #personal_site h1 {
@@ -179,6 +180,7 @@ h1 {
   resize: horizontal;
   overflow: auto;
   padding: 10px;
+  margin-top: 22px;
 }
 
 #image-flex {
@@ -194,6 +196,7 @@ h1 {
   margin-top: 22px;
   max-width: 460px;
   padding: 10px;
+  margin-top: 22px;
 }
 
 .tags li {
@@ -209,6 +212,7 @@ h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 18px;
+  margin-top: 22px;
 }
 
 .navegacao ul li > a {
@@ -233,6 +237,7 @@ h1 {
 .videos {
   padding: 10px;
   max-width: 460px;
+  margin-top: 22px;
 }
 
 #flex-img {
@@ -251,4 +256,11 @@ h1 {
 
 #flex-img img:hover{
   transform: scale(1.1);
+}
+
+/*Phanton Section*/
+#phanton{
+  width: 460px;
+  margin-top: 22px;
+  visibility: hidden;
 }
