@@ -12,21 +12,25 @@
   --main-font: "coolvetica", Fallback, sans-serif;
   --second-font: "idroid", fallback, sans-serif;
   --main-color-green: #84e1ad;
-  --dark-green: #1a5c38;
+  --dark-green: #236340;
   --menu-green: #2fa866;
   --lighter-green: #c5ebd6;
   --text-color: #ccdbd2;
+  --content-color: #ffffff;
 }
 
 /* Main setups */
 
 body {
+  position: relative;
   background-color: var(--main-color-green);
   align-items: center;
   font-family: var(--main-font);
   color: var(--text-color);
   margin: 0px;
 }
+
+/* Header settings */
 
 header {
   position: relative;
@@ -49,8 +53,8 @@ header {
 }
 
 #head-info h1,
-p,
-nav ul li {
+#head-info p,
+#head-info nav ul li {
   text-shadow: 2px 1.5px 0px #888888;
 }
 
@@ -66,16 +70,102 @@ nav ul li {
 header nav {
   position: absolute;
   bottom: 0;
+  height: 50px;
 }
 
 header nav ul {
   display: flex;
   width: 100%;
   list-style-type: none;
-  padding-inline-start: 10px;
+  padding-inline-start: 5px;
+  margin-bottom: none;
 }
 
 header nav ul li {
-  padding: 5px;
-  font-size: large;
+  padding-right: 17px;
+  font-size: 1.5vw;
+}
+
+header nav ul li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Main content */
+
+#main-content {
+  position: absolute;
+  z-index: 99 !important;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--content-color);
+  width: 76vw;
+  color: var(--dark-green);
+  padding: 15px;
+  font-size: 1.5vw;
+  -webkit-box-shadow: 0px 10px 46px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 46px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 46px -11px rgba(0, 0, 0, 0.75);
+}
+
+#main-content section {
+  text-align: center;
+  margin: auto;
+}
+
+#main-content section p span {
+  color: var(--menu-green);
+  font-weight: bold;
+}
+
+#main-content section p span a {
+  text-decoration: none;
+  color: var(--menu-green);
+}
+
+#main-content section h1,
+#main-content section p,
+#main-content section h3 {
+  text-align: start;
+}
+
+#main-content section h1,
+#main-content section h3 {
+  font-family: var(--second-font);
+  text-transform: capitalize;
+}
+
+#main-content section p {
+  text-indent: 1.5em;
+}
+
+#main-content section h3 {
+  background: linear-gradient(
+    90deg,
+    rgba(198, 235, 215, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding-left: 5px;
+}
+
+#irina-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#video {
+  height: 535px;
+  background-color: var(--dark-green);
+  position: relative;
+  margin-right: -50px;
+  margin-left: -15px;
+}
+
+#video .wrapper {
+  width: 760px;
+  height: 515px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
