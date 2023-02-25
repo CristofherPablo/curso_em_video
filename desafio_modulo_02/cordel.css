@@ -124,3 +124,63 @@ footer{
     width: 600px;
     text-align: center;
 }
+
+/* Media Queries */
+
+@media (min-width: 768px) and (max-width: 884px) {
+    header,
+    section,
+    footer{
+        width: 768px;
+    }
+
+   header p,
+   section p,
+   footer p{
+        font-size: 1.8rem;
+    }
+
+    section div{
+        height: 600px;
+    }
+
+    section div:nth-child(3n),
+    section div:nth-child(5n){
+        height: 1000px;
+    }
+
+    footer{
+        height: 80px;
+    }
+}
+
+@media (max-width: 428px) {
+
+    header,
+    section,
+    footer{
+        width: 380px;
+    }
+
+    footer{
+        height: 70px;
+    }   
+}
+
+@media (max-width: 320px) {
+    header,
+    section,
+    footer {
+        width: 310px;
+    }
+
+    header h1{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
