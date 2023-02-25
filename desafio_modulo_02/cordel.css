@@ -72,7 +72,7 @@ section {
 }
 
 section div{
-    height: 320px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -82,7 +82,7 @@ section div{
 
 section div:nth-child(3n),
 section div:nth-child(5n){
-    height: 650px;
+    height: 670px;
 }
 
 section div p {
@@ -92,7 +92,7 @@ section div p {
 /* Parallax effect creating*/
 
 .parallax{
-    min-height: 340px;
+    min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,4 +107,20 @@ section div p {
 #bookpages{
     background-image: url(assets/sheets.jpg);
     color: var(--secondary-color);
+}
+
+.parallax p{
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.20);
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    height: 40px;
+    width: 600px;
+    text-align: center;
 }
